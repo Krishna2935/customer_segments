@@ -12227,7 +12227,7 @@ Third : I think this must be a customer buying all the items in less quantity re
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong><ol><li>I attempted to predict the 'Grocery' feature, which I think is most suitable for this case.</li>
     <li>The reported prediction score is 0.6752, which is more positive(R^2).</li>
-    <li>I think this feature having R^2 score more than 0.5 would be necessary to for identifying customer's spending habits.</li></ol></p>
+    <li>I think this feature having R^2 score more than 0.5, it can be easily reconstructed using other features.If a feature can be reconstructed, it doesn't contain unique information.It is not  really necessasry for understanding the data in relevance.<</li></ol></p>
 
 </div>
 </div>
@@ -13477,7 +13477,7 @@ Once you have performed this implementation, the dataset will be stored in the v
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong> <ul><li>The first and second principle components are explained **0.7068 variance** in total.</li>
     <li>And 0.9311 variance explained by the first four principle components.</li>
-    <li>By looking at the above visualization, dimension 1 has  </li></ul></p>
+    <li>By looking at the above visualization, dimension 1 has more weight in 'Fresh' and 'Frozen' , which represents its a small type of restaurant or milk center. Looking at second dimension it contains more weight in 'Milk', 'Grocery' and 'Detergent_paper',represents a convinience store or market, as though negatively distributed.Third dimension has high variance in 'Frozen' and 'Delicatessen', which represents a restaurant. Coming to the final one, fourth dimension, has 'frozen' and 'detergent_paper' , I think it represents a type of small restaurant.   </li></ul></p>
 
 </div>
 </div>
@@ -14176,7 +14176,8 @@ And the customer assigned to cluster 1 would represent a small restaurant due to
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong> <ul><li>I don't think that the change affects all customers equally. Based on hypothesis observed the wholesaler can bring in change of deliveries from 5 days to 3 days. But here all are not equally affected by bringing this change.</li>
-    <li>Here in segment 0, which represents a convinience store or market , have the ability to store the goods for more time by buying necessary goods in large quantity as per required. And he may be reacted positively because of reducing time of importing several times a week.. But coming to the segment 1 , which represents a restaurant, can't maintain it with such low deliveries because thry have to serve fresh products to their clients. Products of restaurants are not suitable to store for long time. That's why they need to get fresh products with less time gap. If the deliveries per week are reduced then they will react negatively.</li></ul></p>
+    <li>Here in segment 0, which represents a convinience store or market , have the ability to store the goods for more time by buying necessary goods in large quantity as per required. And he may be reacted positively because of reducing time of importing several times a week.. But coming to the segment 1 , which represents a restaurant, can't maintain it with such low deliveries because thry have to serve fresh products to their clients. Products of restaurants are not suitable to store for long time. That's why they need to get fresh products with less time gap. If the deliveries per week are reduced then they will react negatively.</li>
+    <li>With this in mind, the Company could run A/B tests and generalize. By picking a subset customers from each Cluster, they can evaluate feedback seperately. It could be established whether changing the delivery service is critical to each segment, and whether customers are happy with the change.</li></ul></p>
 
 </div>
 </div>
